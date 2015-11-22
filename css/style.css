@@ -1,0 +1,50 @@
+body {
+
+}
+body, button, input {
+    font-family: 'Open Sans', sans-serif;
+}
+.forest {
+    border: 1px solid black;
+    margin: 15px auto;
+    position: relative;
+    display: block;
+}
+
+.center {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+.config {
+    text-align: left;
+    display: inline-block;
+}
+.case {
+    width: 1px;
+    height:1px;
+    position: absolute;
+}
+
+.state-1 {
+    background: green;
+}
+
+.state-2 {
+    background: orange;
+}
+
+.state-3 {
+    background: #333333;
+}
+
+.data {
+    display: none;
+}
+
+tr, td, th, table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}

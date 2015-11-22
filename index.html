@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Percolation simulation</title>
+        <script src="./js/index.js" ></script>
+        <script src="./js/Tree.js" ></script>
+        <link rel="stylesheet" href="./css/style.css"></link>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="center">
+            <h1>Percolation simulation</h1>
+            <div class="config">
+                <label>Grid size : </label><input type="number" id="size" value="100"><br>
+                <label>Probability</label><input type="range" min="0" max="1" step="0.01" id="probability" value="0.5"><input type="text" id="display-probability" value="0.5" readonly="readonly"><br>
+                <input type="button" class="initSimulation" value="Initialize grid">
+            </div>
+
+            <div class="simulation">
+                <canvas class="forest">
+                </canvas>
+
+                <button type="button" class="launchSimulation" >Launch Simulation</button>
+            </div>
+
+            <div class="data">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Trees
+                            </th>
+                            <th>
+                                ashes
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cell-trees">
+
+                            </td>
+                            <td class="cell-ashes">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-percent-trees">
+
+                            </td>
+                            <td class="cell-percent-ashes">
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button type="button" class="reset">Reset simulation</button>
+            </div>
+        </div>
+    </body>
+</html>
