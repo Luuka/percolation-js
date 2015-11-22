@@ -8,6 +8,9 @@ var size = 100;
 window.addEventListener("load", function(){
 
     forest = document.querySelector('.forest');
+    forest.addEventListener('click', function(){
+        this.classList.toggle('upscale');
+    });
     document.querySelector('.simulation').style.display = "none";
 
     document.getElementById('probability').addEventListener('change', function(){
