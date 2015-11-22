@@ -10,14 +10,19 @@
         <div class="center">
             <h1>Percolation simulation</h1>
             <div class="config">
-                <label>Grid size : </label><input type="number" id="size" value="100"><br>
-                <label>Probability</label><input type="range" min="0" max="1" step="0.01" id="probability" value="0.5"><input type="text" id="display-probability" value="0.5" readonly="readonly"><br>
-                <input type="button" class="initSimulation" value="Initialize grid">
+                <fieldset>
+                    <label>Grid size : </label><input type="number" id="size" value="100"><br>
+                    <label>Probability : </label><input type="range" min="0" max="1" step="0.01" id="probability" value="0.55"><input type="text" id="display-probability" value="0.55" readonly="readonly"><br>
+                    <input type="button" class="initSimulation" value="Initialize grid">
+                </fieldset>
             </div>
 
             <div class="simulation">
                 <canvas class="forest">
                 </canvas>
+                <p>
+                    <em>(click on the map to upscale)</em>
+                </p>
 
                 <button type="button" class="launchSimulation" >Launch Simulation</button>
             </div>
@@ -56,6 +61,11 @@
 
                 <button type="button" class="reset">Reset simulation</button>
             </div>
+
+            <div>
+                <a href="https://zestedesavoir.com/forums/sujet/4690/novembre-2015-simulation-dun-feu-de-foret" target="_blank">Challenge on Zeste de Savoir</a>
+            </div>
+
         </div>
     </body>
 </html>
